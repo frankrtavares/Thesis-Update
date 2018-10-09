@@ -65,7 +65,7 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<p id="init-lacking">Apologies! Your web browser lacks required capabilities. Please consider upgrading it or switching to a more modern web browser.</p>
 		<p id="init-loading">Initializing. Please wait&hellip;<br /><progress></progress></p>
 	</div>
-	<div id="store-area" hidden><tw-storydata name="An unnamed story" startnode="1" creator="Twee2" creator-version="0.5.0" ifid="154311cc-9e70-498f-829c-fcfd05c6cfa8" format="SugarCube" options=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Title Page" tags="" position="160,160">&lt;center&gt;&lt;b&gt;Frank's Thesis (Needs Title)&lt;/center&gt;&lt;/b&gt;
+	<div id="store-area" hidden><tw-storydata name="An unnamed story" startnode="1" creator="Twee2" creator-version="0.5.0" ifid="23e84804-4e13-433b-bab5-4892f73aaf5f" format="SugarCube" options=""><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Title Page" tags="" position="160,160">&lt;center&gt;&lt;b&gt;Frank's Thesis (Needs Title)&lt;/center&gt;&lt;/b&gt;
 &lt;center&gt;Draft 1.2&lt;/center&gt;
 
 &lt;center&gt;[[Begin-&gt;Prologue]]&lt;/center&gt;
@@ -126,7 +126,10 @@ All shapes are the same. Just twisted, in different ways. Changed to fit the han
 
 Let us start with these smaller shapes: these words. Curved into meaning, shapes evoking voice. 
 
-The first, your name: (will be able to type in name here. For now, click [[here-&gt;Write Name]] for a prompt)</tw-passagedata><tw-passagedata pid="4" name="Write Name" tags="" position="460,160">(set: $name to(prompt:"Type in your name:"))
+The first, your name: &lt;&lt;textbox "$name" "Frank"&gt;&gt;
+
+
+(will be able to type in name here. For now, click [[here-&gt;Write Name]] for a prompt)</tw-passagedata><tw-passagedata pid="4" name="Write Name" tags="" position="460,160">(set: $name to(prompt:"Type in your name:"))
 Thank you, $name. Now, we can start to see what shape you will take. Which of these strange shapes you'll choose as your own. But for now... there's only possibility.
 
 I wish we could stay on this page forever. You and me, just... sitting in the blank space before and after everything begins to turn.
