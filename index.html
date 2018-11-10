@@ -102,8 +102,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<div id="store-area" hidden><tw-storydata name="When You Arrive 11/10" startnode="1" creator="Twine" creator-version="2.2.1" ifid="40d59a93-8466-4858-b80d-90c6c72afd7e" zoom="1" format="SugarCube" format-version="1.0.35" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
-body {
+	<div id="store-area" hidden><tw-storydata name="When You Arrive 11/10" startnode="1" creator="Twine" creator-version="2.2.1" ifid="4164bd7b-a856-4452-be6b-f5c451cc984b" zoom="1" format="SugarCube" format-version="1.0.35" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
 	background-color: white;
 	
 	color: black;
@@ -113,6 +112,7 @@ body {
 #ui-bar {
 		background-color: white;
 }
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
 /* Anchor Link to Passage - Start */
 if ("onhashchange" in window) { // event supported
@@ -141,9 +141,7 @@ function hashChanged() {
 	}
 }
 $(document).on(':passageend', function () { hashChanged(); });
-/* Anchor Link to Passage - End */
-
-</script><tw-passagedata pid="1" name="Title Page" tags="" position="160,160" size="100,100">&lt;center&gt;&lt;b&gt;When You Arrive&lt;/b&gt;&lt;/center&gt;
+/* Anchor Link to Passage - End */</script><tw-passagedata pid="1" name="Title Page" tags="" position="160,160" size="100,100">&lt;center&gt;&lt;b&gt;When You Arrive&lt;/b&gt;&lt;/center&gt;
 &lt;center&gt;Draft 1&lt;/center&gt;
 
 &lt;center&gt;[[Begin-&gt;Prologue]]&lt;/center&gt;
@@ -7870,8 +7868,8 @@ Everyone is silent, following Yusuf as he looks for the markings on the ice floo
 
 The sound of the crunches beneath your feet begin to change, reaching a higher pitch.
 
-[[Look down.]]
-[[Listen closely.]]</tw-passagedata><tw-passagedata pid="729" name="&quot;Our mission takes priority.&quot;" tags="" position="73060,160" size="100,100">&quot;Our mission takes priority. We have to go back to the ship.&quot;
+[[Look down.-&gt;Look down ch5]]
+[[Listen closely.-&gt;Listen closely ch5]]</tw-passagedata><tw-passagedata pid="729" name="&quot;Our mission takes priority.&quot;" tags="" position="73060,160" size="100,100">&quot;Our mission takes priority. We have to go back to the ship.&quot;
 
 &quot;My only mission is to get home,&quot; says Yusuf. 
 
@@ -7991,8 +7989,8 @@ You&#39;re both silent, following the markings on the ice floor. The only sound 
 
 The sound of the crunches beneath your feet begin to change, reaching a higher pitch.
 
-[[Look down.]]
-[[Listen closely.]]
+[[Look down.-&gt;Look down ch5]]
+[[Listen closely.-&gt;Listen closely ch5]]
 
 (note: still need to edit next section for a version with just Sarah and $name)
 
@@ -8016,8 +8014,11 @@ Listening closely, you hear an echoing ping appearing consistently. They seem to
 
 The next step you take breaks through the ice. Your boot pulls you down, searching for something to hold onto, dragging your leg under the ice before the magnetic locks deactivate, finding nothing.
 
-(if alive) Joana notices first. &quot;$name, you&#39;re foot--&quot;
-(if Joana dead) Teeneese notices first. &quot;Everyone stop! $name&#39;s foot--&quot;
+&lt;&lt;if $Joana is &quot;alive&quot;&gt;&gt;\
+Joana notices first. &quot;$name, you&#39;re foot--&quot;
+&lt;&lt;else&gt;&gt;\
+Teeneese notices first. &quot;Everyone stop! $name&#39;s foot--&quot;
+&lt;&lt;endif&gt;&gt;\
 
 [[&quot;Is about to freeze off in an alien ocean, yeah I see.&quot;]]
 [[&quot;Someone pull me up. Now.&quot;]]</tw-passagedata><tw-passagedata pid="748" name="Listen closely ch5" tags="" position="74960,160" size="100,100">Looking down, you notice the ice looks brighter, more hints of blue than before.
@@ -8052,7 +8053,7 @@ The next step you take breaks through the ice. Your boot pulls you down, searchi
 &quot;No wait,&quot; says Sarah. &quot;We could use the drone, to see what&#39;s down there.&quot; She points into the hole in the ice. &quot;There could be biosamples in the water.&quot;
 
 [[&quot;We don&#39;t have time, let&#39;s move on.&quot;]]
-[[&quot;Okay, lets collect some water samples. Quickly.&quot;]]</tw-passagedata><tw-passagedata pid="751" name="&quot;Okay, let&#39;s collect some water samples. Quickly.&quot;" tags="" position="75260,160" size="100,100">&quot;Okay, lets collect some samples from the water,&quot; you say. &quot;Quickly.&quot; Sarah smiles.
+[[&quot;Okay, let&#39;s collect some water samples. Quickly.&quot;]]</tw-passagedata><tw-passagedata pid="751" name="&quot;Okay, let&#39;s collect some water samples. Quickly.&quot;" tags="" position="75260,160" size="100,100">&quot;Okay, lets collect some samples from the water,&quot; you say. &quot;Quickly.&quot; Sarah smiles.
 
 &quot;And I suppose you want to use my drone?&quot; says Yusuf, with a scowl.
 
@@ -8910,7 +8911,7 @@ Yusuf exhales the oxygen he&#39;s been holding in his lungs. It seems quieter, n
 
 [[&quot;Joshua doesn&#39;t need to be human to be a person.&quot;]]
 [[&quot;Yusuf&#39;s right, this is a trick.&quot;]]
-[[Say nothing.-&gt;say nothing end ch5]]
+[[Say nothing.-&gt;Say nothing end ch5]]
 &lt;&lt;endif&gt;&gt;\</tw-passagedata><tw-passagedata pid="812" name="Knock her arm down." tags="" position="81360,160" size="100,100">You knock her arm down, as she fires. The beam hitting the floor instead, gouging a small hole in the ice. Her fingers tremble and she drops the device.
 
 You watch as she fires, the beam moving towards Yusuf. He pushes himself out of the line of fire, as the beam passes him, gouging a small hole in the ice behind. Joana&#39;s fingers tremble as she drops the device.
