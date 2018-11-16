@@ -102,7 +102,7 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<div id="store-area" hidden><tw-storydata name="When You Arrive 11/16" startnode="1" creator="Twine" creator-version="2.2.1" ifid="22313557-1810-4cf9-9995-937631392749" zoom="1" format="SugarCube" format-version="1.0.35" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+	<div id="store-area" hidden><tw-storydata name="When You Arrive 11/16" startnode="1" creator="Twine" creator-version="2.2.1" ifid="dcd189ba-5a2e-4f34-8b77-6ff091889c57" zoom="1" format="SugarCube" format-version="1.0.35" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
 body {
 	background-color: white;
 	
@@ -140,8 +140,7 @@ function hashChanged() {
 	}
 }
 $(document).on(':passageend', function () { hashChanged(); });
-/* Anchor Link to Passage - End */
-</script><tw-passagedata pid="1" name="Title Page" tags="" position="160,160" size="100,100">&lt;center&gt;&lt;b&gt;When You Arrive&lt;/b&gt;&lt;/center&gt;
+/* Anchor Link to Passage - End */</script><tw-passagedata pid="1" name="Title Page" tags="" position="160,160" size="100,100">&lt;center&gt;&lt;b&gt;When You Arrive&lt;/b&gt;&lt;/center&gt;
 
 &lt;center&gt;[[Begin-&gt;Prologue]]&lt;/center&gt;
 &lt;center&gt;[[Chapter Select]]&lt;/center&gt;
@@ -7299,7 +7298,7 @@ He puts out his hands, wisps of the shimmer leaking out and crawling along the e
 [[Share the memory as well.]]
 [[Stay back.-&gt;Stay back ch5]]</tw-passagedata><tw-passagedata pid="752" name="Share the memory as well." tags="" position="75360,160" size="100,100">You approach, moving to grab one of Joshua&#39;s hands.
 
-&lt;&lt;if $relJoshua =&lt; 0&gt;&gt;\
+&lt;&lt;if $relJoshua &lt;= 0&gt;&gt;\
 &quot;Not you,&quot; he says with a glare. &quot;You don&#39;t get to see this part of me.&quot;
 
 Yusuf stands beside him, holding one of his hands, as you [[stand back.-&gt;Stay back ch5]]
@@ -10859,9 +10858,9 @@ The crew grows silent, the bickering stops. And they look to you. &quot;How shal
 &lt;&lt;else&gt;&gt;\
 &quot;He&#39;s weak,&quot; says Teenesee. &quot;He&#39;s no Captain. He&#39;s the child of a paper-pusher whose only talent was playing with remote-controlled toys.&quot;
 
-&lt;&lt;if $Yusuf is &quot;alive&quot; and $relYusuf =&lt; 0&gt;&gt;&quot;Leaving things up to him has gotten too many of us killed, and no closer to getting off this rock,&quot; says Yusuf.&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $Yusuf is &quot;alive&quot; and $relYusuf &lt;= 0&gt;&gt;&quot;Leaving things up to him has gotten too many of us killed, and no closer to getting off this rock,&quot; says Yusuf.&lt;&lt;endif&gt;&gt;
 
-&lt;&lt;if $Joana is &quot;alive&quot; and $relJoana =&lt; 0&gt;&gt;&quot;Fuck that,&quot; says Joana. &quot;We&#39;re not a monarchy. This shit&#39;s too important for us not to all have a say. We vote.&quot;&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $Joana is &quot;alive&quot; and $relJoana &lt;= 0&gt;&gt;&quot;Fuck that,&quot; says Joana. &quot;We&#39;re not a monarchy. This shit&#39;s too important for us not to all have a say. We vote.&quot;&lt;&lt;endif&gt;&gt;
 
 &quot;$name, you... you&#39;re not yourself, you know that,&quot; says Sarah. &quot;You&#39;re almost as human as you are not.&quot;
 
@@ -10894,9 +10893,9 @@ The crew grows silent, the bickering stops. And they look to you. &quot;How shal
 &lt;&lt;else&gt;&gt;\
 &quot;He&#39;s weak,&quot; says Teenesee. &quot;He&#39;s no Captain. He&#39;s the child of a paper-pusher whose only talent was playing with remote-controlled toys.&quot;
 
-&lt;&lt;if $Yusuf is &quot;alive&quot; and $relYusuf =&lt; 0&gt;&gt;&quot;Leaving things up to him has gotten too many of us killed, and no closer to getting off this rock,&quot; says Yusuf.&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $Yusuf is &quot;alive&quot; and $relYusuf &lt;= 0&gt;&gt;&quot;Leaving things up to him has gotten too many of us killed, and no closer to getting off this rock,&quot; says Yusuf.&lt;&lt;endif&gt;&gt;
 
-&lt;&lt;if $Joana is &quot;alive&quot; and $relJoana =&lt; 0&gt;&gt;&quot;Fuck that,&quot; says Joana. &quot;We&#39;re not a monarchy. This shit&#39;s too important for us not to all have a say. We vote.&quot;&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $Joana is &quot;alive&quot; and $relJoana &lt;= 0&gt;&gt;&quot;Fuck that,&quot; says Joana. &quot;We&#39;re not a monarchy. This shit&#39;s too important for us not to all have a say. We vote.&quot;&lt;&lt;endif&gt;&gt;
 
 &quot;$name, you... you&#39;re not yourself, you know that,&quot; says Sarah. &quot;You&#39;re almost as human as you are not.&quot;
 
@@ -10927,9 +10926,9 @@ The crew grows silent, the bickering stops. And they look to you. &quot;How shal
 &lt;&lt;else&gt;&gt;\
 &quot;He&#39;s weak,&quot; says Teenesee. &quot;He&#39;s no Captain. He&#39;s the child of a paper-pusher whose only talent was playing with remote-controlled toys.&quot;
 
-&lt;&lt;if $Yusuf is &quot;alive&quot; and $relYusuf =&lt; 0&gt;&gt;&quot;Leaving things up to him has gotten too many of us killed, and no closer to getting off this rock,&quot; says Yusuf.&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $Yusuf is &quot;alive&quot; and $relYusuf &lt;= 0&gt;&gt;&quot;Leaving things up to him has gotten too many of us killed, and no closer to getting off this rock,&quot; says Yusuf.&lt;&lt;endif&gt;&gt;
 
-&lt;&lt;if $Joana is &quot;alive&quot; and $relJoana =&lt; 0&gt;&gt;&quot;Fuck that,&quot; says Joana. &quot;We&#39;re not a monarchy. This shit&#39;s too important for us not to all have a say. We vote.&quot;&lt;&lt;endif&gt;&gt;
+&lt;&lt;if $Joana is &quot;alive&quot; and $relJoana &lt;= 0&gt;&gt;&quot;Fuck that,&quot; says Joana. &quot;We&#39;re not a monarchy. This shit&#39;s too important for us not to all have a say. We vote.&quot;&lt;&lt;endif&gt;&gt;
 
 &quot;$name, you... you&#39;re not yourself, you know that,&quot; says Sarah. &quot;You&#39;re almost as human as you are not.&quot;
 
@@ -11528,7 +11527,7 @@ She stretches out her hand.
 [[Take it.-&gt;Take it Ten Mem]]
 [[Leave it.-&gt;Leave it Ten Mem]]
 
-&lt;&lt;elseif $relTeenesee =&lt; 3&gt;&gt;\
+&lt;&lt;elseif $relTeenesee &lt;= 3&gt;&gt;\
 &quot;Nothing of your concern,&quot; she says, not bothering to turn and face you. &quot;I suggest you keep your focus on the mission at hand.&quot;
 
 She surges ahead in the tunnel. It&#39;s no time at all and you reach the end. As you approach, the light&#39;s shimmering become more pronounced. The tunnel&#39;s edges broaden and curve out into an opening. The streams of microbial life lining the wall seem to flow faster as you approach the end, clawing themselves around the corners of the opening into the chamber beyond.
@@ -11765,7 +11764,9 @@ That&#39;s why you could breathe through the water, how I saved you.
 //They do not. But they realize the necessity of contact for any attempt at communication. I believe that is why they have directed us towards the construct of this pool. It will isolate you from the larger network, while still giving you access to it.//
 
 [[&quot;It&#39;s an interrogation chamber.&quot;]]
-[[&quot;Safer for both of us.&quot;]]</tw-passagedata><tw-passagedata pid="1201" name="&quot;You&#39;re forcing us to be like you.&quot;" tags="" position="120460,160" size="100,100">&quot;You&#39;re forcing us to be like you.&quot;
+[[&quot;Safer for both of us.&quot;]]
+
+&lt;&lt;set $relDelta to $relDelta - 3&gt;&gt;</tw-passagedata><tw-passagedata pid="1201" name="&quot;You&#39;re forcing us to be like you.&quot;" tags="" position="120460,160" size="100,100">&quot;You&#39;re forcing us to be like you.&quot;
 
 //There is no force, here. Only an attempt to reach out with understanding.//
 
@@ -11799,7 +11800,9 @@ That&#39;s why you could breathe through the water, how I saved you.
 //They do not. But they realize the necessity of contact for any attempt at communication. I believe that is why they have directed us towards the construct of this pool. It will isolate you from the larger network, while still giving you access to it.//
 
 [[&quot;It&#39;s an interrogation chamber.&quot;]]
-[[&quot;Safer for both of us.&quot;]]</tw-passagedata><tw-passagedata pid="1202" name="&quot;Perhaps you&#39;re right.&quot;" tags="" position="120560,160" size="100,100">&quot;Perhaps you&#39;re right.&quot;
+[[&quot;Safer for both of us.&quot;]]
+
+&lt;&lt;set $relDelta to $relDelta - 2&gt;&gt;</tw-passagedata><tw-passagedata pid="1202" name="&quot;Perhaps you&#39;re right.&quot;" tags="" position="120560,160" size="100,100">&quot;Perhaps you&#39;re right.&quot;
 
 //And perhaps there&#39;s hope for some kind of peace between our kinds.//
 
@@ -11833,7 +11836,9 @@ That&#39;s why you could breathe through the water, how I saved you.
 //They do not. But they realize the necessity of contact for any attempt at communication. I believe that is why they have directed us towards the construct of this pool. It will isolate you from the larger network, while still giving you access to it.//
 
 [[&quot;It&#39;s an interrogation chamber.&quot;]]
-[[&quot;Safer for both of us.&quot;]]</tw-passagedata><tw-passagedata pid="1203" name="&quot;It&#39;s an interrogation chamber.&quot;" tags="" position="120660,160" size="100,100">&quot;So, it&#39;s an interrogation chamber. They can ask us questions without getting their hands dirty.&quot;
+[[&quot;Safer for both of us.&quot;]]
+
+&lt;&lt;set $relDelta to $relDelta + 2&gt;&gt;</tw-passagedata><tw-passagedata pid="1203" name="&quot;It&#39;s an interrogation chamber.&quot;" tags="" position="120660,160" size="100,100">&quot;So, it&#39;s an interrogation chamber. They can ask us questions without getting their hands dirty.&quot;
 
 //Questions are not the same as an interrogation. Regardless, the liquid will only embed you with individual bacteria, likely tasked only with keeping you alive. I doubt you&#39;ll find another pestering voice like me in your head.//
 
@@ -11853,13 +11858,18 @@ That&#39;s why you could breathe through the water, how I saved you.
 
 Turning back to the water, you&#39;re faced again with your reflection. It&#39;s up close, this time. You notice pus congealing above your cheek. Blisters about your feet. You look good, considering your travels through time/the bowels of this planet with little protection.
 
-The water invites you, the soft whisper of the coolness it gives off. The beckoning of its clear teal blue. All it takes is a [[step.-&gt;Enter the water.]]</tw-passagedata><tw-passagedata pid="1206" name="&quot;You shouldn&#39;t. I&#39;ll go alone.&quot;" tags="" position="120960,160" size="100,100">&quot;You shouldn&#39;t,&quot; you say. &quot;I&#39;ll go alone.&quot;
+The water invites you, the soft whisper of the coolness it gives off. The beckoning of its clear teal blue. All it takes is a [[step.-&gt;Enter the water.]]
+
+
+&lt;&lt;set $relSarah to $relSarah + 1&gt;&gt;</tw-passagedata><tw-passagedata pid="1206" name="&quot;You shouldn&#39;t. I&#39;ll go alone.&quot;" tags="" position="120960,160" size="100,100">&quot;You shouldn&#39;t,&quot; you say. &quot;I&#39;ll go alone.&quot;
 
 &quot;I&#39;m going.&quot; There&#39;s another hiss, as she begins to remove her helmet. &quot;I&#39;ll be right behind you.&quot;
 
 Turning back to the water, you&#39;re faced again with your reflection. It&#39;s up close, this time. You notice pus congealing above your cheek. Blisters about your feet. You look good, considering your travels through time/the bowels of this planet with little protection.
 
-The water invites you, the soft whisper of the coolness it gives off. The beckoning of its clear teal blue. All it takes is a [[step.-&gt;Enter the water.]]</tw-passagedata><tw-passagedata pid="1207" name="Enter the water." tags="" position="121060,160" size="100,100">It&#39;s a small step forward and your body slips into the water. It consumes you quietly as you pass through the membrane of its surface. Your eyes don&#39;t sting as you leave them open, find yourself spinning as the water&#39;s surface soon finds itself beneath you and hands stretch out, the lights surrounding you moving in tandem with your body. There&#39;s a cacophony of bubbles from below you as Sarah enters as well.
+The water invites you, the soft whisper of the coolness it gives off. The beckoning of its clear teal blue. All it takes is a [[step.-&gt;Enter the water.]]
+
+&lt;&lt;set $relSarah to $relSarah - 1&gt;&gt;</tw-passagedata><tw-passagedata pid="1207" name="Enter the water." tags="" position="121060,160" size="100,100">It&#39;s a small step forward and your body slips into the water. It consumes you quietly as you pass through the membrane of its surface. Your eyes don&#39;t sting as you leave them open, find yourself spinning as the water&#39;s surface soon finds itself beneath you and hands stretch out, the lights surrounding you moving in tandem with your body. There&#39;s a cacophony of bubbles from below you as Sarah enters as well.
 
 The light blue water seems to grow darker. You listen, for a voice, like mine. Search for a pattern amongst the shifting lights. They seem to move faster, dancing through your fingers and arms, directing you to the roots dipping into the water, rising up from under you, branching and twisting about more freely than in the cavern. You reach out and [[grab one.]]</tw-passagedata><tw-passagedata pid="1208" name="grab one." tags="" position="121160,160" size="100,100">It&#39;s soft. You feel the pulsing, a heartbeat. Now, you close your eyes. Listen. Feel. You sense the root&#39;s material slowly growing around your hand and you begin to feel yourself stretching out... up out of the water, into the cavern above and then...
 
@@ -11909,7 +11919,7 @@ I know it&#39;s all I can do to survive. For any of us to survive this.
 
 These unearthed memories, I thought it could be our gift to them. An offering of understanding. And so we sought to construct pieces of the worlds they left: telescope, for $name; drill for Joana; filter for Sarah; qibla for Yusuf; guitar for Joshua; report for Teenesee.
 
-But instead, they saw this as a threat. / But instead, they only became more confused. / They saw it as an invitation to learn, which was a start.
+&lt;&lt;if $reaction is &quot;threat&quot;&gt;&gt;But instead, they saw this as a threat.&lt;&lt;elseif $reaction is &quot;learn&quot;&gt;&gt;They saw it as an invitation to learn, which was a start.&lt;&lt;else&gt;&gt;But instead, they only became more confused.&lt;&lt;endif&gt;&gt;
 
 The rest of the story plays out as you know it does. We try to shape our forms like them, find faces from their pasts, but they don&#39;t understand. Their only concern to desperately latch onto the past they&#39;ve thrown away, not listening to the meaning behind our presence.
 
