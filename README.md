@@ -1,2 +1,3 @@
-# Thesis-Update
-In-progress draft of Frank Tavares' thesis project.
+# When You Arrive
+
+A work of interactive fiction by Frank Tavares.
